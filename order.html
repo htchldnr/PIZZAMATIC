@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzamatic-Order Your Piza</title>
+    </head>
+    <body style="background-color: salmon;">
+        <header>
+            <h1>Order Your Pizza</h1>
+        </header>
+        <main>
+            <form action="./order.html" method="POST">
+          <section>
+            <label for="pizza_name">Name Your Pizza</label><br>
+            <input id="pizza_name "type="text" title="Please,enter your pizza name" required>
+          </section>
+          <br>
+          <section>
+            <label for="pizza_base">Select Your Pizza Base</label><br>
+            <select id="pizza_base">
+                <option value="standart">Standart</option>
+                <option value="thin">Thin Crust</option>
+                <option value="stuffed">Stuffed</option>
+            </select>
+          </section>
+          <br>
+          <section>
+            <label for="pizza_base_souce">Select Your Pizza Base Souce</label><br>
+            <input type="text" list="pizza_souce_list">
+              <datalist id="pizza_souce_list" >
+                <option value="BBQ Souce">BBQ Souce</option>
+                <option value="Hot BBQ Souce">Hot BBQ Souce</option>
+                <option value="Tomato Souce">Tomato Souce</option> 
+              </datalist>
+          </section>
+          <br>
+          <section>
+          <label for="pizza_size">Select Your Pizza Size</label><br>
+          <span>Small</span>
+          <input type="range" min="1" max="4" step="1" >
+          <span>Extra Large</span>
+          </section>
+          <br>
+          <section>
+            <label for="">Select Toppings</label><br>
+            <input id="mushroom" type="checkbox" value="mushroom" name="pizza_toppings">
+            <label for="mushroom">Mushroom</label><br>
+            <input id="olive" type="checkbox" value="olive" name="pizza_toppings">
+            <label for="olive">Olive</label><br>
+            <input id="peppers" type="checkbox" value="onion" name="pizza_toppings">
+            <label for="peppers">Peppers</label><br>
+            <input id="Onion" type="checkbox" value="Onion" name="pizza_toppings">
+            <label for="Onion">Onion</label>
+          </section>
+          <br>
+          <section>
+            <label for="">Would you like extra cheese</label><br>
+            <input id="extra_cheese" type="radio" name="extra_cheese" value="yes" checked>
+            <label for="extra_cheese">Yes</label>
+            <input id="no_extra_cheese" type="radio" name="extra_cheese" value="no">
+            <label for="no_extra_cheese">No</label>
+          </section>
+          <br>
+          <section>
+            <label for="collection_time">When will ypu pick up?</label>
+            <input id="collection_time" name="collection_time" type="number" min="15" max="50" step="5">
+          </section>
+          <br>
+          <section>
+          <button>Submit</button>
+          </section>  
+          </form>
+        </main>
+        <hr>
+       
+        <footer> &copy; 2020 PizzaMatic</footer>
+    </body>
+    </html>
+   
